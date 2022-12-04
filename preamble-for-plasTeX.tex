@@ -1,0 +1,37 @@
+\documentclass[UTF8]{book}
+\setcounter{secnumdepth}{3}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{color}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\theoremstyle{plain}
+\ifx\thechapter\undefined
+	\newtheorem{Theorem}{定理}
+\else
+	\newtheorem{Theorem}{定理}[chapter]
+\fi
+\newtheorem{Lemma}[Theorem]{引理}
+\newtheorem{Corollary}[Theorem]{推论}
+\newtheorem{Proposition}[Theorem]{命题}
+\newtheorem{Conjecture}[Theorem]{猜想}
+\newtheorem{Fact}[Theorem]{事实}
+
+\theoremstyle{definition}
+\newtheorem{Definition}[Theorem]{定义}
+\newtheorem{Example}[Theorem]{例}
+\newtheorem{Problem}[Theorem]{问题}
+\newtheorem{Exercise}[Theorem]{习题}
+\newtheorem{Claim}[Theorem]{断言}
+
+\theoremstyle{remark}
+\newtheorem{Note}[Theorem]{注记}
+
+\newenvironment{Proof}[1][证明]
+{\noindent\normalfont {\bfseries #1}}{□}
+
+
+\makeatother
